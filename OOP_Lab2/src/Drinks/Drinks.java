@@ -2,7 +2,7 @@ package Drinks;
 
 import Types.Intensity;
 
-public class Drinks {
+class Drinks {
     private Intensity intensity;
     private String name;
 
