@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="58b13449-8c94-4ae9-9f8a-f32b3ddcfec8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_Lab2/src/Drinks/Americano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_Lab2/src/Drinks/Cappuccino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_Lab2/src/Drinks/Coffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_Lab2/src/Drinks/Drinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_Lab2/src/Drinks/PumpkinSpiceLatte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_Lab2/src/Drinks/SyrupCappuccino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_Lab2/src/Types/Intensity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP_Lab2/src/Types/SyrupType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Lab2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Lab2/src/main/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2o6LZ4ykvE1pXIbbfmrcvXxqK7O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "oop-advanced-tasks",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/HomeWork/SecondYear/OOP/OOP_Lab1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HomeWork\SecondYear\OOP\OOP_Lab1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\HomeWork\SecondYear\OOP\OOP_Lab1\OOP_Lab1" />
+      <recent name="D:\HomeWork\SecondYear\OOP\OOP_Lab\resources" />
+      <recent name="D:\HomeWork\SecondYear\OOP\OOP_Lab" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="OOP_Lab" />
+      <option name="PROGRAM_PARAMETERS" value="text1.txt text2.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58b13449-8c94-4ae9-9f8a-f32b3ddcfec8" name="Changes" comment="" />
+      <created>1730185132847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730185132847</updated>
+      <workItem from="1730185133878" duration="7290000" />
+      <workItem from="1730226077068" duration="3262000" />
+      <workItem from="1730229868346" duration="1323000" />
+      <workItem from="1730231253000" duration="174000" />
+      <workItem from="1730231560658" duration="2801000" />
+      <workItem from="1730270285700" duration="1132000" />
+      <workItem from="1730533946414" duration="3222000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OOP_Lab$Main.ic" NAME="Main Coverage Results" MODIFIED="1730186479941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>main.*</FILTER>
+    </SUITE>
+  </component>
+</project>
