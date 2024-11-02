@@ -23,8 +23,7 @@ public class Drinks {
     public void setName(String name) {
         this.name = name;
     }
-    public boolean display() {
-        System.out.println(this.name + " " + this.intensity);
-        return false;
+    public void printDrinkDetails() {
+
     }
 }

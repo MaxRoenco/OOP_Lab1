@@ -8,4 +8,17 @@ public class Americano extends Drinks {
         super(intensity, name);
         this.mlOfWater = mlOfWater;
     }
+
+    public int getMlOfWater() {
+        return mlOfWater;
+    }
+    public void setMlOfWater(int mlOfWater) {
+        this.mlOfWater = mlOfWater;
+    }
+
+    @Override
+
+    public void printDrinkDetails(){
+        System.out.println(getName() + " intensity: " + getIntensity() + "\n" + "Drink: " + getName() + "\n" + getName() + " milk: " + getMlOfWater() + "\n");
+    }
 }

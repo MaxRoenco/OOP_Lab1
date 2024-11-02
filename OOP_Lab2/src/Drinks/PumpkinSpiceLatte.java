@@ -8,4 +8,17 @@ public class PumpkinSpiceLatte extends Cappuccino {
         super(name, intensity, mlOfMilk);
         this.mlOfPumpkinSpice = mlOfPumpkinSpice;
     }
+
+    public int getMlOfPumpkinSpice() {
+        return mlOfPumpkinSpice;
+    }
+    public void setMlOfPumpkinSpice(int mlOfPumpkinSpice) {
+        this.mlOfPumpkinSpice = mlOfPumpkinSpice;
+    }
+
+    @Override
+
+    public void printDrinkDetails(){
+        System.out.println(getName() + " intensity: " + getIntensity() + "\n" + "Drink: " + getName() + "\n" + getName() + " milk: " + getMlOfMilk() + "\n"  + " Ml Of Pumpkin Spice: " + getMlOfPumpkinSpice() + "\n");
+    }
 }

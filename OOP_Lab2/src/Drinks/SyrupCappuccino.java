@@ -16,4 +16,10 @@ public class SyrupCappuccino  extends Cappuccino {
     public void setSyrup(SyrupType syrup) {
         this.syrup = syrup;
     }
+
+    @Override
+
+    public void printDrinkDetails(){
+        System.out.println(getName() + " intensity: " + getIntensity() + "\n" + "Drink: " + getName() + "\n" + getName() + " milk: " + getMlOfMilk() + "\n" + getName() + " Syrup Type" + getSyrup() + "\n");
+    }
 }
