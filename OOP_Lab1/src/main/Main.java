@@ -5,11 +5,7 @@ import task2.FileReaderClass;
 import task2.TextData;
 import task3.Assistant;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
