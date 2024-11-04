@@ -21,4 +21,9 @@ class Americano extends Drinks {
     public void printDrinkDetails(){
         System.out.println(getName() + " intensity: " + getIntensity() + "\n" + "Drink: " + getName() + "\n" + getName() + " milk: " + getMlOfWater() + "\n");
     }
+    public final Americano makeAmericano(){
+        super.makeDrink();
+        System.out.println("ml of Water: " + mlOfWater);
+        return this;
+    }
 }

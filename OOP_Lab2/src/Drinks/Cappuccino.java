@@ -21,4 +21,10 @@ class Cappuccino extends Drinks{
     public void printDrinkDetails(){
         System.out.println(getName() + " intensity: " + getIntensity() + "\n" + "Drink: " + getName() + "\n" + getName() + " milk: " + getMlOfMilk() + "\n");
     }
+
+    public final Cappuccino makeCappuccino(){
+        super.makeDrink();
+        System.out.println("ml of Milk: " + getMlOfMilk());
+        return this;
+    }
 }

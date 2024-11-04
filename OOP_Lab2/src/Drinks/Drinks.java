@@ -24,6 +24,8 @@ class Drinks {
         this.name = name;
     }
     public void printDrinkDetails() {
-
+    }
+    final public void makeDrink(){
+        System.out.println("Making " + getName() + "\n Intensity: " + getIntensity());
     }
 }

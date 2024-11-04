@@ -4,19 +4,13 @@ import Types.Intensity;
 import Types.SyrupType;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Barista {
     private List<String> arrayOfDrinks;
-
+    Scanner sc = new Scanner(System.in);
     Intensity[] intensities = Intensity.values();
     SyrupType[] syrupTypes = SyrupType.values();
-
-    Americano americano = new Americano("Americano", intensities[0], 10);
-    Cappuccino cappuccino = new Cappuccino("Cappuccinno", intensities[0], 10);
-    Coffee coffee = new Coffee("Coffee", intensities[2]);
-    PumpkinSpiceLatte pumpkinSpiceLatte = new PumpkinSpiceLatte("Pumpkin Spice Latte", intensities[1], 20, 10);
-    SyrupCappuccino syrupCappuccino = new SyrupCappuccino("Syrup Cappuccino", intensities[0], 10, syrupTypes[1]);
-
 
     public Barista(List<String> arrayOfDrinks) {
         this.arrayOfDrinks = arrayOfDrinks;
@@ -25,6 +19,7 @@ public class Barista {
     public List<String> getArrayOfDrinks() {
         return arrayOfDrinks;
     }
+
     public void setArrayOfDrinks(List<String> arrayOfDrinks) {
         this.arrayOfDrinks = arrayOfDrinks;
     }
@@ -38,27 +33,92 @@ public class Barista {
     }
 
     public void makeDrink() {
-        for(String drink : this.arrayOfDrinks) {
-            switch (drink){
+        for (String drink : this.arrayOfDrinks) {
+            switch (drink.toLowerCase()) {
                 case "coffee":
-                    coffee.printDrinkDetails();
+                    Coffee coffee = new Coffee("Coffee", getIntensity(sc));
+                    coffee.makeCoffee();
                     break;
                 case "cappuccino":
-                    cappuccino.printDrinkDetails();
+                    Cappuccino cappuccino = new Cappuccino("Cappuccino", getIntensity(sc), getMlOfMilk(sc));
+                    cappuccino.makeCappuccino();
                     break;
                 case "americano":
-                    americano.printDrinkDetails();
+                    Americano americano = new Americano("Americano", getIntensity(sc), getMlOfWater(sc));
+                    americano.makeAmericano();
                     break;
                 case "pumpkinspicelatte":
-                    pumpkinSpiceLatte.printDrinkDetails();
+                    PumpkinSpiceLatte pumpkinSpiceLatte = new PumpkinSpiceLatte("Pumpkin Spice Latte", getIntensity(sc), getMlOfMilk(sc), getMlOfPumpkinSpice(sc));
+                    pumpkinSpiceLatte.makePumpkinSpiceLatte();
                     break;
                 case "syrupcappuccino":
-                    syrupCappuccino.printDrinkDetails();
+                    SyrupCappuccino syrupCappuccino = new SyrupCappuccino("Syrup Cappuccino", getIntensity(sc), getMlOfMilk(sc), getSyrupType(sc));
+                    syrupCappuccino.makeSyrupCappuccino();
                     break;
                 default:
+                    System.out.println("Invalid drink: " + drink);
                     break;
             }
         }
+    }
+
+    public Intensity getIntensity(Scanner sc) {
+        System.out.print("Enter Intensity (light, normal, strong): ");
+        String input = sc.nextLine().toLowerCase();
+        switch (input) {
+            case "light":
+                return Intensity.LIGHT;
+            case "normal":
+                return Intensity.NORMAL;
+            case "strong":
+                return Intensity.STRONG;
+            default:
+                System.out.println("Invalid Intensity. Defaulting to NORMAL.");
+                return Intensity.NORMAL;
+        }
+    }
+
+    public SyrupType getSyrupType(Scanner sc) {
+        System.out.print("Enter SyrupType (macadamia, vanilla, coconut, caramel, chocolate, popcorn): ");
+        String input = sc.nextLine().toLowerCase();
+        switch (input) {
+            case "macadamia":
+                return SyrupType.MACADAMIA;
+            case "vanilla":
+                return SyrupType.VANILLA;
+            case "coconut":
+                return SyrupType.COCONUT;
+            case "caramel":
+                return SyrupType.CARAMEL;
+            case "chocolate":
+                return SyrupType.CHOCOLATE;
+            case "popcorn":
+                return SyrupType.POPCORN;
+            default:
+                System.out.println("Invalid SyrupType. Defaulting to NONE.");
+                return null;
+        }
+    }
+
+    public int getMlOfWater(Scanner sc) {
+        System.out.print("Enter ml of water: ");
+        int water = sc.nextInt();
+        sc.nextLine();
+        return water;
+    }
+
+    public int getMlOfMilk(Scanner sc) {
+        System.out.print("Enter ml of milk: ");
+        int milk = sc.nextInt();
+        sc.nextLine();
+        return milk;
+    }
+
+    public int getMlOfPumpkinSpice(Scanner sc) {
+        System.out.print("Enter ml of Pumpkin Spice: ");
+        int pumpkinSpice = sc.nextInt();
+        sc.nextLine();
+        return pumpkinSpice;
     }
 
     public void display() {

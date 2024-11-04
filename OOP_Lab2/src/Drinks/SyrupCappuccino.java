@@ -20,6 +20,12 @@ class SyrupCappuccino  extends Cappuccino {
     @Override
 
     public void printDrinkDetails(){
-        System.out.println(getName() + " intensity: " + getIntensity() + "\n" + "Drink: " + getName() + "\n" + getName() + " milk: " + getMlOfMilk() + "\n" + getName() + " Syrup Type" + getSyrup() + "\n");
+        System.out.println(getName() + " intensity: " + getIntensity() + "\n" + "Drink: " + getName() + "\n" + getName() + " milk: " + getMlOfMilk() + "\n" + getName() + " Syrup Type " + getSyrup() + "\n");
+    }
+
+    public final SyrupCappuccino makeSyrupCappuccino(){
+        super.makeDrink();
+        System.out.println("Syrup: " + getSyrup());
+        return this;
     }
 }

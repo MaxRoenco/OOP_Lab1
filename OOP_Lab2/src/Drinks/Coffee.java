@@ -12,4 +12,9 @@ class Coffee extends Drinks{
     public void printDrinkDetails(){
         System.out.println(getName() + " intensity: " + getIntensity() + "\n" + "Drink: " + getName() + "\n");
     }
+    final public Coffee makeCoffee(){
+        super.makeDrink();
+        return this;
+    }
+
 }
